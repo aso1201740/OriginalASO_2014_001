@@ -7,9 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,20 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public void onClick(View v) {
+	protected void onResume() {
+		// TODO 自動生成されたメソッド・スタブ
+		super.onResume();
+		Button btnOK = (Button)findViewById(R.id.btnOK);
+		btnOK.setOnClickListener(this);
+
+	}
+
+	@Override
+	public void onClick(View v){
 		switch(v.getId()){
 		case R.id.btnOK:
-			EditText etv = (EditText)findViewById(R.id.edtName);
-			String inputMsg = etv.getText().toString();
+			//EditText etv = (EditText)findViewById(R.id.edtName);
+			//String inputMsg = etv.getText().toString();
 			Random rnd = new Random();
 			int ran = rnd.nextInt(4);
 			Intent intent = null;

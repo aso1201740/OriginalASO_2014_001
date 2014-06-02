@@ -22,21 +22,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity>
+        <activity
+            android:name="jp.ac.asojuku.original2014001.DakichiActivity"
+            android:label="@string/app_name" >
         	<intent-filter>
-        		<action android:name="android.intent.action.Daikichi" android:label="@string/app_name"></action>
+        		<action android:name="android.intent.action.MAIN"></action>
         		<category android:name="android.intent.category.LAUNCHER"></category></intent-filter></activity>
-        <activity>
+        <activity
+            android:name="jp.ac.asojuku.original2014001.ChuukichiActivity"
+            android:label="@string/app_name" >
         	<intent-filter>
-        		<action android:name="android.intent.action.Chuukichi" android:label="@string/app_name"></action>
+        		<action android:name="android.intent.action.MAIN"></action>
         		<category android:name="android.intent.category.LAUNCHER"></category></intent-filter></activity>
-        <activity>
+        <activity
+            android:name="jp.ac.asojuku.original2014001.KyouActivity"
+            android:label="@string/app_name" >
         	<intent-filter>
-        		<action android:name="android.intent.action.Kyou" android:label="@string/app_name"></action>
+        		<action android:name="android.intent.action.MAIN"></action>
         		<category android:name="android.intent.category.LAUNCHER"></category></intent-filter></activity>
-        <activity>
+        <activity
+            android:name="jp.ac.asojuku.original2014001.DaikyouActivity"
+            android:label="@string/app_name" >
         	<intent-filter>
-        		<action android:name="android.intent.action.Daikyou" android:label="@string/app_name"></action><category android:name="android.intent.category.LAUNCHER"></category>
-        		</intent-filter></activity></application>
+        		<action android:name="android.intent.action.MAIN"></action>
+        		<category android:name="android.intent.category.LAUNCHER"></category></intent-filter></activity>
+        		</application>
 
 </manifest>

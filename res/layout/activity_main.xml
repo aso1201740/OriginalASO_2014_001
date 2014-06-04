@@ -20,16 +20,30 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="25dp"
-        android:text="おみくじ" />
+        android:ems="10"
+        android:text="おみくじ" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtName"
         android:layout_below="@+id/edtName"
-        android:layout_marginTop="57dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
         android:text="OK" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnOK"
+        android:layout_below="@+id/btnOK"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main" />
 
 </RelativeLayout>
